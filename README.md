@@ -27,4 +27,4 @@ To apply our method to an example dataset, follow the three steps below.
 2. Load the R packages and R functions in `main_function.R`.
 3. Run the R script `example_RF.R` in the current directory.
 
-For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
+For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu) or Tal Einav (tal.einav@gmail.com).
