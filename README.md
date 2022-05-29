@@ -13,7 +13,7 @@ The R script `main_function.R` contains the main functions of the algorithm, alo
 
 The csv file `InfluenzaData.csv` contains six real-world influenza datasets (Fonville 2014, Tables S1, S3, S5, S6, S13 and S14) analyzed in the paper (Tal Einav and Rong).
 
-The R script `example.R` contains some example R codes that 
+The R script `example_RF.R` contains some example R codes that 
 
 (i) predict the antibody responses against the virus "A.PANAMA.2007.99" in a vaccination study (Fonville 2014, Table 14) using the data from another vaccination study (Fonville 2014, Table S13), and 
 
@@ -25,6 +25,6 @@ To apply our method to an example dataset, follow the three steps below.
 
 1. Download the dataset `InfluenzaData.csv` from the current directory.
 2. Load the R packages and R functions in `main_function.R`.
-3. Run the R script `example.R` in the current directory.
+3. Run the R script `example_RF.R` in the current directory.
 
 For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
