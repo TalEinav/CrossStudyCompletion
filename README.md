@@ -22,7 +22,7 @@ The R script `example.R` contains some example R codes that
 To apply our method to an example dataset, follow the three steps below.
 
 1. Download the dataset `InfluenzaData.csv` from the current directory.
-2. Load the R packages and R functions in main_function.R.
-3. Run the R script example.R in the current directory.
+2. Load the R packages and R functions in `main_function.R`.
+3. Run the R script `example.R` in the current directory.
 
 For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu).
