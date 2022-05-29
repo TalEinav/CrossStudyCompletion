@@ -80,7 +80,7 @@ RF.complete <- function(data.t, data.s.list, feature.t, n.tree = 50, n.feature =
      f.transfer <- function(x){
        return(max(c(x, a*x+b+c)))
      }
-     print(c(a,b,c))
+     print(c(paste0("a=",round(a,3)),paste0("b=",round(b,3)),paste0("c=",round(c,3))))
      
      
      ##### predict feature.t
@@ -88,7 +88,7 @@ RF.complete <- function(data.t, data.s.list, feature.t, n.tree = 50, n.feature =
                              f.sample = f.sample, k=k)
      mu[[k]] = RF1t1$mu
      sigma[[k]] = f.transfer(mean(RF1t1$pred.err))
-     print(c(mean(RF1t1$pred.err), sigma[[k]]))
+     #print(c(mean(RF1t1$pred.err), sigma[[k]]))
      }
    }
    
