@@ -154,7 +154,7 @@ RF.complete.1t1 <- function(data.assist, data.t, feature.t, n.tree = n.tree, n.f
     f.sel.ind[[i]] = f.ind[sample(length(f.ind), n.feature, replace = TRUE)]
     sample.sel = sample(dim(data.assist)[1], dim(data.assist)[1]*f.sample, replace = TRUE)
     data.train = data.assist[sample.sel, c(f.sel.ind[[i]], f.t.ind)]
-    data.train = log10(data.train)
+
     colm.t=apply(data.train, 1, mean, na.rm=T)
     data.train=data.train- t(rep(1, dim(data.train)[2]) %*% t(colm.t))
     colnames(data.train)[n.feature+1] = "target"
@@ -162,7 +162,7 @@ RF.complete.1t1 <- function(data.assist, data.t, feature.t, n.tree = n.tree, n.f
     ###get decision tree and RMSE
     tree[[i]]=rpart(`target`~., data=data.frame(data.train), control=rpart.control(minsplit = 5))
     data.test =  data.assist[-sample.sel, c(f.sel.ind[[i]], f.t.ind)]
-    #data.test = log10(data.test)
+
     colm.t=apply(data.test, 1, mean, na.rm=T)
     data.test=data.test- t(rep(1, dim(data.test)[2]) %*% t(colm.t))
     pred.t = predict(tree[[i]], newdata = data.frame(data.test), type="vector")
@@ -176,7 +176,7 @@ RF.complete.1t1 <- function(data.assist, data.t, feature.t, n.tree = n.tree, n.f
     f.t.ind = which(colnames(data.t)==feature.t) 
     f.t.sel.ind = match(names(f.sel.ind[[j]]), colnames(data.t))
     data.test =  data.t[, c(f.t.sel.ind, f.t.ind)]
-    #data.test = log10(data.test)
+
     colm.t=apply(data.test, 1, mean, na.rm=T)
     data.test = data.test- t(rep(1, dim(data.test)[2]) %*% t(colm.t))
     colnames(data.test)[n.feature+1] = "target"
