@@ -1,13 +1,12 @@
-# Cross-Study Matrix Completion via Random Forest
+# Cross-Study Matrix Completion via a Random Forest Algorithm
 
 A random forest algorithm for matrix completion across multiple studies.
 
 For a collection of datasets generated from multiple studies, where the measured features may have little-to-no overlap across the studies, our method provides predictions along with uncertainty quantifications for the missing values of a given datasets based on its existing observations and the observations from other datasets.
 
-Our method takes as input the target data matrix whose features (columns) are to be completed, and one or a few additional datasets containing (partial) measurements of the feature-of-interest. The method would output the predicted values for the feature-of-interest, along with their predicted root mean squared error (RMSE).
+# Implementation in R
 
-
-# Content
+All code and data is available in the *Matrix Completion in R* folder.
 
 The R script `main_function.R` contains the main functions of the algorithm, along with the description of the arguments.
 
@@ -19,12 +18,23 @@ The R script `example_RF.R` contains some example R codes that
 
 (ii) predict the antibody responses against the virus "A.AUCKLAND.5.96" in a vaccination study (Fonville 2014 Table 14) using the data from other three vaccination studies (Fonvile 2014, Tables S5, S6 and S13). 
 
-# Get Started
+## Getting Started
 
 To apply our method to an example dataset, follow the three steps below.
 
-1. Download the dataset `InfluenzaData.csv` from the current directory.
+1. Download the dataset `InfluenzaData.csv`.
 2. Load the R packages and R functions in `main_function.R`.
-3. Run the R script `example_RF.R` in the current directory.
+3. Run the R script `example_RF.R`.
 
-For further questions and inquiries, please contact Rong Ma (rongm@stanford.edu) or Tal Einav (tal.einav@gmail.com).
+
+# Implementation in Mathematica
+
+All code and data is available in the *Matrix Completion in Mathematica* folder. The Mathematica notebook `Matrix Completion.nb` contains detailed descriptions of the datasets and matrix completion algorithm, and it provides all the code necessary to recreate the plots in this work.
+
+With the Initialization section loaded, matrix completion of a virus-of-interest in a table-of-interest proceeds as:
+ ###
+	completionPredictions[{virusOfInterest, tableOfInterest}]
+###
+
+## Contact
+For further questions and inquiries, please contact Tal Einav (tal.einav@gmail.com) or Rong Ma (rongm@stanford.edu).
