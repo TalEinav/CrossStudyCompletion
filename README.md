@@ -1,4 +1,7 @@
 # Cross-Study Matrix Completion via a Random Forest Algorithm
+**Authors:** Tal Einav and Rong Ma
+<br>
+https://doi.org/10.1101/2022.06.09.495425
 
 A random forest algorithm for matrix completion across multiple studies.
 
