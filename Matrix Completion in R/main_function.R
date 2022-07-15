@@ -5,9 +5,9 @@ library(rpart)
 #data.s.list: a list of other assisting dataset(s) with columns being features and rows being samples, each containing the feature-of-interest and at least 5 additional features that overlap with the data.t
 #data.t and the datasets in data.s.list should have the same features.
 #feature.t: name of the feature-of-interest contained in data.t and as well as the datasets in data.s.list.
-#n.tree: number of decision trees trained for each assiting data; default 50
+#n.tree: number of decision trees trained for each assisting data; default 50
 #n.feature: number of other features in each assisting data used for prediction; default 5
-#f.sample: proportion of samples in each assiting data used for training; default 0.3.
+#f.sample: proportion of samples in each assisting data used for training; default 0.3.
 
 RF.complete <- function(data.t, data.s.list, feature.t, n.tree = 50, n.feature = 5, f.sample = 0.3,
                         n.best.tree = 5){
