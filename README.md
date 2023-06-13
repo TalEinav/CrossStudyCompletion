@@ -40,4 +40,4 @@ With the Initialization section loaded, matrix completion of a virus-of-interest
 ###
 
 ## Contact
-For further questions and inquiries, please contact Tal Einav (tal.einav@gmail.com) or Rong Ma (rongm@stanford.edu).
+For further questions and inquiries, please contact Tal Einav (tal.einav@lji.org) or Rong Ma (rongm@stanford.edu).
