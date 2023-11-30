@@ -31,6 +31,9 @@ To apply our method to an example dataset, follow the three steps below.
 2. Load the R packages and R functions in `main_function.R`.
 3. Run the R script `example_RF.R`.
 
+# Implementation in Python
+
+All code and data is available in the *Matrix Completion in Python* folder.
 
 # Implementation in Mathematica
 
