@@ -5,7 +5,7 @@ https://doi.org/10.1016/j.crmeth.2023.100540
 <br/>
 [![DOI](https://zenodo.org/badge/489141368.svg)](https://zenodo.org/badge/latestdoi/489141368)
 
-A random forest algorithm for matrix completion across multiple studies.
+A random forest algorithm for matrix completion across multiple studies. This method is further refined in project [CAPYBARA](https://link-url-here.org]https://github.com/TalEinav/CAPYBARA).
 
 For a collection of datasets generated from multiple studies, where the measured features may have little-to-no overlap across the studies, our method provides predictions along with uncertainty quantifications for the missing values of a given datasets based on its existing observations and the observations from other datasets.
 
